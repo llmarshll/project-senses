@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Senses Your Salon and Spa</title>
+  
+    <!-- imports-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+	
+	<!-- Javascript -->
+  <style>
+ <!--The team -->
+ .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+ 
+ 
+  <!--Effects for the nav. hover -->
+  .linkHoverEffect_12  a {
+  padding: 12px 14px;
+  position: relative;
+  -moz-transition: ease-out 0.3s 0.1s;
+  -o-transition: ease-out 0.3s 0.1s;
+  -webkit-transition: ease-out 0.3s;
+  -webkit-transition-delay: 0.1s;
+  transition: ease-out 0.3s 0.1s;
+}
+
+.linkHoverEffect_12  a span::before {
+  height: 100%;
+  width: 2px;
+  background: #95f097;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.linkHoverEffect_12  a span::after {
+  height: 100%;
+  width: 2px;
+  background:#95f097;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.linkHoverEffect_12  a::before {
+  height: 2px;
+  width: 100%;
+  background: #95f097;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.linkHoverEffect_12  a::after {
+  height: 2px;
+  width: 100%;
+  background: #95f097;
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.linkHoverEffect_12  a:hover {
+  color: #6559bc;
+}
+.linkHoverEffect_12  a:hover::before, .linkHoverEffect_12  a:hover::after {
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.linkHoverEffect_12  a:hover span::before, .linkHoverEffect_12  a:hover span::after {
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+nav.linkEffects.linkHoverEffect_12 ul li {
+	    margin: 0 10px;
+		list-style:none;
+}
+nav.linkEffects.linkHoverEffect_12 ul li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none !important;
+}
+nav.linkEffects.linkHoverEffect_12 ul li a span {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+  
+  
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+	  background-image: url("ba.jpg");
+   <!-- background-image: url(images/ba.jpg), url(paper.gif);-->
+   
+	background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+  }
+  
+  body a:hover{
+	text-decoration:none;
+	    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+
+  h2 {
+     font-family: 'Playfair Display', serif;
+		margin:0;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #95f097;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+		font-family: 'Playfair Display', serif;
+		margin:0;
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #95f097;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+ 
+  .jumbotronn {
+	  background:#fff;
+      color: #14ae1f;
+      padding: 5px 5px;
+      font-family: Montserrat, sans-serif;
+  }
+  
+  
+  .jumbotron {
+	  background: #fff;
+      color: #14ae1f;
+      padding: 5px 5px;
+      font-family: Montserrat, sans-serif;
+  }
+  
+  <!-- about design -->
+   .jumbotron1 {
+	   background: #fff;
+	   color: #14ae1f;
+      padding: 5px 5px;
+      font-family: Montserrat, sans-serif;
+  }
+
+  <!-- whole body-->
+  .container-fluid {
+      padding: 10px 5px;
+	  background-color: #000;
+	 opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #95f097;
+  }
+  .carousel-indicators li {
+      border-color: #95f097;
+  }
+  .carousel-indicators li.active {
+      background-color: #95f097;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #14ae1f;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+	  opacity: 0.7;
+      background-color: #000000;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #95f097 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f7faf7 !important;
+      background-color: #868986 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #95f097;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  
+  <!-- carousel -->
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  
+  
+  <!--pricing -->
+  * {
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+  
+  <!-- appointment page-->
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: auto%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {float:left;width:50%}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+  
+ 
+  
+  </style>
+</head>
+
+
+<body >
+
+
+  <div id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Senses Your Salon & Spa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	  
+	  <ul class="nav navbar-nav linkEffects linkHoverEffect_12">
+
+        <li class="active"><a href="#about">HOME</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#men">Men</a></li>
+          <li><a href="#women">Women</a></li>
+		  <li><a href="#kids">Kids</a></li> 
+        </ul>
+      </li>
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PORTFOLIO <span class="caret"></span></a>
+		 <ul class="dropdown-menu">
+          <li><a href="#portfolio">Gallery</a></li>
+          <li><a href="#prices">Prices</a></li>
+        </ul>
+        <li><a href="#branch">BRANCHES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+	  </ul>
+	  
+	  
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+	<!-- carousel -->
+ <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="images/1.jpg" alt="Hair Spa"/>
+        <div class="carousel-caption">
+          <h3>Hair Spa</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/2.jpg" alt="FootSPa" />
+        <div class="carousel-caption">
+          <h3>Foot Spa</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/4.jpg" alt="Pedicure" />
+        <div class="carousel-caption">
+          <h3>Pedicure</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/5.jpg" alt="Hair Color" />
+        <div class="carousel-caption">
+          <h3>Hair Color</h3>
+        </div>
+      </div>
+	  
+	   <div class="item">
+        <img src="images/6.jpg" alt="Body Massage"/>
+        <div class="carousel-caption">
+          <h3>Body Massage</h3>
+        </div>
+      </div>
+	  
+	   <div class="item">
+        <img src="images/7.jpg" alt="Manicure" />
+        <div class="carousel-caption">
+          <h3>Manicure</h3>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+  <h1>SENSES Your Salon and Spa.... </h1> 
+  <p>Because you deserve it!</p> 
+ </div>
+ 
+<!-- Container (About Section) -->
+<div class="jumbotron1">
+
+</div>
+	<div id="about" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8">
+			<br>
+			<br>
+			<br>
+			<h2>About Us</h2>
+			<h4>DGDs SENSES Your Salon and Spa is a</h4>
+			<p> DGDs SENSES Your Salon and Spa is a locally-established salon mainly located in Rd1 Minuyan Proper
+			San Jose Del Monte, Bulacan. The salon is owned and operated by Dennis David a Marketing and Business Administration graduate with 10 years experience in Corporate Marketing and Sales in Metro Manila.
+			DGDs SENSES Your Salon and Spa humbly began January 8, 2012. Dennis opens the pioneering outlet with a goal of serving the customer with the best of quality and customer service. The salon aims to deliver service that will pamper the customer in achieving a more beautiful and relaxing feeling.DGDs SENSES Your Salon and Spa offers hair treatments, massage, body scrub and many more. The company wants the customers to feel good and look good as well. The salon is not limited to women clientele; in fact most men prefer also the touch of DGDs SENSES Your Salon and Spa to achieve maximum beauty with affordable price. The salon is staffed with well-trained and friendly service provider that will serve the customers with maximum satisfaction. The salon implemented 
+			a specialized training for employees that will prepare them in meeting the standards of customers.</p>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			<img src="images/f.jpg">
+			<!--<img src="gif/2.gif">-->
+			
+		</div>
+	</div>
+
+
+<!-- Container (Services Section) -->
+<div class="container-fluid bg-grey">
+ <div id="men" class="container-fluid text-center">
+			<br>
+			<br>
+			<br>
+			
+  <h2>SERVICES for MEN</h2>
+<!--  <h4>What we offer</h4>-->
+  
+  <div class="row slideanim">
+    <div class="col-sm-4">
+   
+      <img src="gif/1.gif">
+    </div>
+    <div class="col-sm-4">
+    
+      <img src="gif/2.gif">
+    </div>
+    <div class="col-sm-4">
+      
+       <img src="gif/3.gif">
+    </div>
+  </div>
+ 
+</div>
+</div>
+ <br>
+ 
+ 
+<div class="container-fluid bg-grey">
+ <div id="women" class="container-fluid text-center">
+ <br>
+			<br>
+			<br>
+  <h2>SERVICES for WOMEN</h2>
+<!--  <h4>What we offer</h4>-->
+
+  <div class="row slideanim">
+    <div class="col-sm-4">
+   
+      <img src="gif/4.gif">
+    </div>
+    <div class="col-sm-4">
+    
+   <img src="gif/5.gif">
+    </div>
+    <div class="col-sm-4">
+      
+        <img src="gif/6.gif">
+    </div>
+  </div>
+  	
+	
+</div>
+</div>
+ <br>
+ 
+<div class="container-fluid bg-grey">
+ <div id="kids" class="container-fluid text-center">
+ <br>
+			<br>
+			<br>
+    <h2>SERVICES for KIDS</h2>
+ <!-- <h4>What we offer</h4>-->
+  
+  
+  <div class="row slideanim">
+    <div class="col-sm-4">
+   
+      <img src="gif/7.gif">
+    </div>
+    <div class="col-sm-4">
+    
+   <img src="gif/8.gif">
+    </div>
+    <div class="col-sm-4">
+      
+     <img src="gif/9.gif">
+    </div>
+  </div>
+</div>
+</div>
+ <!-- end of services-->
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center"> 
+			<br>
+			<br>
+			<br>
+  <h2>Portfolio</h2>
+		<!-- carousel -->
+ <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="images/p1.jpg" />
+        </div>
+
+
+      <div class="item">
+        <img src="images/p2.jpg" />
+        </div>
+      
+    
+      <div class="item">
+        <img src="images/p3.jpg"/>
+        </div>
+     
+
+      <div class="item">
+        <img src="images/p8.jpg"  />
+        </div>
+     
+	  
+	   <div class="item">
+        <img src="images/p5.jpg" />
+        </div>
+      
+	  
+	   <div class="item">
+        <img src="images/p6.jpg" />
+        </div>
+      
+	   <div class="item">
+        <img src="images/p7.jpg" />
+        </div>
+		
+		<div class="item">
+        <img src="images/p9.jpg" />
+        </div>
+		
+		<div class="item">
+        <img src="images/p11.jpg" />
+        </div>
+      
+	  
+        </div>
+    </div>
+ </div>
+	 </div>
+	
+	<!---PRICES --->
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="prices" class="container-fluid text-center"> 
+	
+	<h2>Prices and Promo</h2>
+	<div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/pr1.jpg" alt="Paris" width="400" height="300">
+          <button class="btn"><a href="#appointment">Avail Promo</a></button>
+  
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/pr2.jpg" alt="New York" width="400" height="300">
+          <button class="btn"><a href="#appointment">Avail Promo</a></button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/s3.jpg" alt="San Francisco" width="400" height="300">
+          <button class="btn"><a href="#appointment">Avail Promo</a></button>
+        </div>
+      </div>
+	  
+	 
+    </div>
+ </div><!-- end of prices-->
+	
+	
+	
+	<!---------------THE TEAM------------>
+<div class="container text-center">
+  <h2>THE TEAM</h2>
+  <p><em>"hands behind your beauty"</em></p>
+<div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong><h4>Hairstylists</h4></strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="images/s1.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Hairtsylists</p>
+        <p><i> "Life isn't perfect but your hair can be"</i></p>
+        <p>Member since 2015</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong><h4>The Manager</h4></strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="images/s2.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>The Manager</p>
+        <p><i>"You is my canvas"</i></p>
+        <p>Member since 2015</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong><h4>The Make-up Artists</h4></strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="images/s5.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>The Make-up Artists</p>
+        <p><i> "Never underestimate the power of eyebrow"</i></p>
+        <p>Member since 2015</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--------------------------->
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Babalik ako dito promise!"<br><span>Tracey Martinez</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>Venice Caps</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Oh di ba bumalik na ko haha"<br><span>Tracey Martinez</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> <!-- end of customers says-->
+
+  
+  
+  <!-- for branch  -->
+  <div id="branch" class="container-fluid">
+  <div class="text-center">
+			<br>
+			<br>
+			<br>
+<h2 style="text-align:center">BRANCHES</h2>
+<!--<h4 style="text-align:center">An affordable treatment for all of you</h4>-->
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Tungkong Mangga</li>
+    <li class="grey">F&E Bldg. Tungkong Mangga CSJDM, Bulacan</li>
+    <li>Opens Daily</li>
+ 
+	
+    <li class="grey"><a href="#appointment" class="button">Set an Appointment</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Francisco Homes</li>
+    <li class="grey">Brgy. Narra Francisco Homes CSJDM, Bulacan</li>
+    <li>Opens Daily</li>
+    
+    <li class="grey"><a href="#appointment" class="button">Set an Appointment</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Road 1</li>
+    <li class="grey">Road 1 Minuyan Proper CSJDM, Bulacan</li>
+    <li>Opens Daily</li>
+    
+    <li class="grey"><a href="#appointment" class="button">Set an Appointment</a></li>
+  </ul>
+</div>
+</div>
+ </div> 
+
+
+<br>
+<br>
+<br>
+<div id="contact" class="container-fluid text-center"> 
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Philippines</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 09223386142</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> sensesyoursalonandspa@yahoo.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div >  <!--end of contact section -->
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+-->
+ 
+ <div class="jumbotronn text-center">
+ <div id="appointment" class="container-fluid text-center"> 
+			<br>
+			<br>
+			<br>
+  <h2 class="text-center">APPOINTMENT</h2>
+  <div class="row">
+	
+	<div class="col-md-4">
+    <div class="well">
+        <p class="header_p">Even though walk-ins are Welcome, we encourage you to contact us via the form below to set your appointment. You will be contacted within 24 hours for confirmation.</p>
+        <hr>
+
+        <!-- Contact by Input -->
+        <div class="form-group1">
+            <label for="Select">Contact By:</label>
+            <select id="Select" class="form-control">
+                <option>Email</option>
+                <option>Phone</option>
+            </select>
+        </div>
+
+        <!-- fullname Input -->
+        <div class="form-group1">
+            <label for="inputfullname"></label>
+            <input type="fullname" class="form-control" id="inputFullname" placeholder="Your Name">
+        </div>
+
+        <!-- email address Input -->
+        <div class="form-group1">
+            <label for="inputemail"></label>
+            <input type="email" class="form-control" id="inputemail" placeholder="Your Email">
+        </div>
+
+        <!-- Phone Input -->
+        <div class="form-group1">
+            <label for="inputphone"></label>
+            <input type="phone" class="form-control" id="inputphone" placeholder="Your Phone">
+        </div>
+        <hr>
+        <!-- Appointment date -->
+        <p>Appointment Date:</p>
+
+        <!-- 1st Choice Input -->
+
+
+
+        <div class="form-group">
+            <label for="datepicer">1st Choice:</label>
+            <div class="input-group date" id="datetimepicker8">
+                <input type="text" class="form-control">
+                <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+            </div>
+        </div>
+
+
+
+
+        <!-- 2nd Choice Input -->
+        <div class="form-group">
+            <label for="datepicer">2nd Choice:</label>
+            <div class="input-group date" id="datetimepicker8">
+                <input type="text" class="form-control"><span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+            </div>
+        </div>
+
+
+        <!-- Service Input -->
+        <div class="form-group">
+            <label for="Select">Desired Service:</label>
+            <select id="Select" class="form-control">
+                <option>Braids &amp; Twist</option>
+                <option>Clipper Cut</option>
+                <option>Corrective Color</option>
+                <option>Extensions Per Track</option>
+                <option>Full Foil</option>
+                <option>Haircolor</option>
+                <option>Haircut</option>
+                <option>Partial Foil</option>
+                <option>Relaxer/Retouch</option>
+                <option>Shampoo, Blow Dry or Se</option>
+
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+
+        </div>
+
+        <!-- Button Area-->
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">Terms &amp; conditions</label>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn">Cancel</button>
+        <!-- form end -->
+    </div>
+    <!-- well end -->
+</div>
+
+	
+  </div>
+</div >
+</div>  <!--end of contact section -->
+
+ 
+</div> 
+</div>
+</div>
+
+<!--footer -->
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>&#9400;SENSES YOUR SALON AND SPA | ALL RIGHTS RESERVED </p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+<!-- for appointment-->
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
